@@ -1,6 +1,5 @@
 class UserManager:
     def __init__(self):
-        # Armazena usuários no formato {username: {"password": senha, "type": tipo}}
         self.users = {}
 
     def register_user(self):
@@ -29,13 +28,11 @@ class UserManager:
             print("Nome de usuário ou senha incorretos.")
             return None, None
 
-    def add_professor(self):
-        # Função específica para adicionar professores, disponível apenas para administradores.
+    def add_professor(self)
         print("Adicionar um novo professor.")
         self.register_user()
 
     def add_student(self):
-        # Função específica para adicionar alunos, disponível apenas para administradores.
         print("Adicionar um novo aluno.")
         self.register_user()
 
